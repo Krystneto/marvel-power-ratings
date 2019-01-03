@@ -2,18 +2,16 @@
 const express = require('express');
 const router = express.Router();
 
-const characters = require('../../mock-heroes.json');
+const { getCharactersByAttribute, getCharacters, getCharacterById, getCharactersSchema } = require('./controllers/characters');
 
+// Routes
+router.get('/characters/attributes', getCharactersByAttribute)
 
-router.route("/characters")
-    .get((req, res) => {
-        let { format } = req.query;
-        if (format === "json") {
-            res.send(characters)
-        }
-        res.send("Welcome to the `/characters` route")
-    })
+router.get('/characters/schema/', getCharactersSchema)
 
+router.get('/characters/:id/', getCharacterById)
+
+router.get("/characters/", getCharacters)
 
 
 module.exports = router;

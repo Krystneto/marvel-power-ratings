@@ -5,7 +5,7 @@ const app = express();
 
 const router = express.Router()
 
-app.get("/", (req, res) => {
+app.get("/hi", (req, res) => {
     let obj = { test: "hi" }
 
     res.json(obj)

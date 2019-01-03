@@ -1,4 +1,4 @@
-# Express.js on Netlify Example
+<!-- # Express.js on Netlify Example
 
 [![Deploy to
 Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/neverendingqs/netlify-express)
@@ -16,4 +16,5 @@ Express.js endpoints:
 curl https://netlify-express.netlify.com/.netlify/functions/server
 curl https://netlify-express.netlify.com/.netlify/functions/server/another
 curl --header "Content-Type: application/json" --request POST --data '{"json":"POST"}' https://netlify-express.netlify.com/.netlify/functions/server
-```
+``` -->
+

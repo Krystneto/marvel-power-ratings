@@ -1,26 +1,31 @@
 "use strict"
 const _ = require("lodash/core");
 
-const charData = require('../../../mock-heroes.json');
 const charSchema = require('../../../schema/characters-schema.json')
 
 
 module.exports.getCharacters = (req, res) => {
     let { query } = req;
     let { name } = req.query;
-    let { characters } = charData;
+    let data = JSON.parse(process.env.MOCK_HEROES);
+    let { characters } = data;
 
     if (name) {
-        let char = _.filter(charData.characters, el => el.name.toLowerCase() === name.toLowerCase());
-        res.send(char);
+        let character = _.filter(charData.characters, el => el.name.toLowerCase() === name.toLowerCase());
+        res.send(character);
+    } else if (query) {
+        let charsList = _.filter(characters, { "attributes": query })
+        res.send(charsList)
     } else {
-        res.send(charData);
+        res.send(data);
     }
 }
 
 module.exports.getCharacterById = (req, res) => {
     let { id } = req.params;
-    let char = _.filter(charData.characters, el => el.id === id);
+    let { characters } = JSON.parse(process.env.MOCK_HEROES);
+    
+    let char = _.filter(characters, el => el.id === id);
     res.send(char)
 }
 

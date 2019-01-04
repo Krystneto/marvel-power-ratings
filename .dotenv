@@ -1,0 +1,298 @@
+MOCK_HEROES={
+    "characters": [
+      {
+        "id": "1",
+        "name": "Adam Warlock",
+        "gender": "Male",
+        "status": "Hero",
+        "attributes": {
+          "intelligence": "5",
+          "strength": "6",
+          "speed": "6",
+          "durability": "7",
+          "energyProjection": "7",
+          "fightingAblitiy": "6"
+        }
+      },
+      {
+        "id": "2",
+        "name": "Archangel",
+        "gender": "Male",
+        "status": "Hero",
+        "attributes": {
+          "intelligence": "7",
+          "strength": "3",
+          "speed": "3",
+          "durability": "4",
+          "energyProjection": "1",
+          "fightingAblitiy": "3"
+        }
+      },
+      {
+        "id": "3",
+        "name": "Apocalypse",
+        "gender": "Male",
+        "status": "Villian",
+        "attributes": {
+          "intelligence": "7",
+          "strength": "7",
+          "speed": "7",
+          "durability": "6",
+          "energyProjection": "7",
+          "fightingAblitiy": "7"
+        }
+      },
+      {
+        "id": "4",
+        "name": "Aunt May Parker",
+        "gender": "Female",
+        "status": "Civilian",
+        "attributes": {
+          "intelligence": "2",
+          "strength": "1",
+          "speed": "2",
+          "durability": "1",
+          "energyProjection": "1",
+          "fightingAblitiy": "1"
+        }
+      },
+      {
+        "id": "5",
+        "name": "Banshee",
+        "gender": "Male",
+        "status": "Hero",
+        "attributes": {
+          "intelligence": "3",
+          "strength": "2",
+          "speed": "3",
+          "durability": "3",
+          "energyProjection": "7",
+          "fightingAblitiy": "4"
+        }
+      },
+      {
+        "id": "6",
+        "name": "Black Panther",
+        "gender": "Male",
+        "status": "Hero",
+        "attributes": {
+          "intelligence": "5",
+          "strength": "4",
+          "speed": "4",
+          "durability": "3",
+          "energyProjection": "1",
+          "fightingAblitiy": "6"
+        }
+      },
+      {
+        "id": "7",
+        "name": "Blade",
+        "gender": "Male",
+        "status": "Hero",
+        "attributes": {
+          "intelligence": "4",
+          "strength": "5",
+          "speed": "5",
+          "durability": "5",
+          "energyProjection": "1",
+          "fightingAblitiy": "5"
+        }
+      },
+      {
+        "id": "8",
+        "name": "Blob",
+        "gender": "Male",
+        "status": "Villian",
+        "attributes": {
+          "intelligence": "2",
+          "strength": "4",
+          "speed": "3",
+          "durability": "6",
+          "energyProjection": "2",
+          "fightingAblitiy": "3"
+        }
+      },
+      {
+        "id": "9",
+        "name": "Cable",
+        "gender": "Male",
+        "status": "Hero",
+        "attributes": {
+          "intelligence": "7",
+          "strength": "6",
+          "speed": "5",
+          "durability": "6",
+          "energyProjection": "7",
+          "fightingAblitiy": "7"
+        }
+      },
+      {
+        "id": "10",
+        "name": "Callisto",
+        "gender": "Female",
+        "status": "Villian",
+        "attributes": {
+          "intelligence": "4",
+          "strength": "4",
+          "speed": "5",
+          "durability": "4",
+          "energyProjection": "2",
+          "fightingAblitiy": "7"
+        }
+      },
+      {
+        "id": "11",
+        "name": "Cyclops",
+        "gender": "Male",
+        "status": "Hero",
+        "attributes": {
+          "intelligence": "5",
+          "strength": "4",
+          "speed": "4",
+          "durability": "4",
+          "energyProjection": "7",
+          "fightingAblitiy": "5"
+        }
+      },
+      {
+        "id": "12",
+        "name": "Daredevil",
+        "gender": "Male",
+        "status": "Hero",
+        "attributes": {
+          "intelligence": "3",
+          "strength": "2",
+          "speed": "3",
+          "durability": "2",
+          "energyProjection": "1",
+          "fightingAblitiy": "6"
+        }
+      },
+      {
+        "id": "13",
+        "name": "Darkhawk",
+        "gender": "Male",
+        "status": "Hero",
+        "attributes": {
+          "intelligence": "3",
+          "strength": "4",
+          "speed": "2",
+          "durability": "4",
+          "energyProjection": "4",
+          "fightingAblitiy": "2"
+        }
+      },
+      {
+        "id": "14",
+        "name": "Dazzler",
+        "gender": "Female",
+        "status": "Hero",
+        "attributes": {
+          "intelligence": "6",
+          "strength": "4",
+          "speed": "3",
+          "durability": "4",
+          "energyProjection": "7",
+          "fightingAblitiy": "6"
+        }
+      },
+      {
+        "id": "15",
+        "name": "Deadpool",
+        "gender": "Male",
+        "status": "Hero",
+        "attributes": {
+          "intelligence": "5",
+          "strength": "4",
+          "speed": "7",
+          "durability": "7",
+          "energyProjection": "7",
+          "fightingAblitiy": "7"
+        }
+      },
+      {
+        "id": "16",
+        "name": "Elektra",
+        "gender": "Female",
+        "status": "Villian",
+        "attributes": {
+          "intelligence": "4",
+          "strength": "4",
+          "speed": "6",
+          "durability": "2",
+          "energyProjection": "3",
+          "fightingAblitiy": "7"
+        }
+      },
+      {
+        "id": "17",
+        "name": "Emma Frost",
+        "gender": "Female",
+        "status": "Hero/Villian",
+        "attributes": {
+          "intelligence": "7",
+          "strength": "5",
+          "speed": "4",
+          "durability": "7",
+          "energyProjection": "7",
+          "fightingAblitiy": "6"
+        }
+      },
+      {
+        "id": "18",
+        "name": "Falcon",
+        "gender": "Male",
+        "status": "Hero",
+        "attributes": {
+          "intelligence": "3",
+          "strength": "3",
+          "speed": "4",
+          "durability": "3",
+          "energyProjection": "3",
+          "fightingAblitiy": "5"
+        }
+      },
+      {
+        "id": "19",
+        "name": "Fantomex",
+        "gender": "Male",
+        "status": "Hero",
+        "attributes": {
+          "intelligence": "5",
+          "strength": "4",
+          "speed": "4",
+          "durability": "4",
+          "energyProjection": "3",
+          "fightingAblitiy": "4"
+        }
+      },
+      {
+        "id": "20",
+        "name": "Fin Fang Foom",
+        "gender": "Unknown",
+        "status": "Villian",
+        "attributes": {
+          "intelligence": "4",
+          "strength": "4",
+          "speed": "5",
+          "durability": "3",
+          "energyProjection": "4",
+          "fightingAblitiy": "5"
+        }
+      },
+      {
+        "id": "21",
+        "name": "Beast",
+        "gender": "Male",
+        "status": "Hero",
+        "attributes": {
+          "intelligence": "5",
+          "strength": "4",
+          "speed": "3",
+          "durability": "4",
+          "energyProjection": "1",
+          "fightingAblitiy": "4"
+        }
+      }
+    ]
+  }

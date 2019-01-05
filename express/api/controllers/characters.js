@@ -9,7 +9,7 @@ module.exports.getCharacters = (req, res) => {
 
     let { query } = req;
     let { name } = req.query;
-    data = JSON.parse(process.env.CHARACTERS);
+    data = process.env.CHARACTERS;
     let { characters } = data;
 
     if (name) {
@@ -25,7 +25,7 @@ module.exports.getCharacters = (req, res) => {
 
 module.exports.getCharacterById = (req, res) => {
     let { id } = req.params;
-    let data = JSON.parse(process.env.HEROES);
+    let data = process.env.HEROES;
     let { characters } = data;
     
     let char = _.filter(characters, el => el.id === id);

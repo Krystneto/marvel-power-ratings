@@ -5,3 +5,11 @@
 [[redirects]]
   from = "/characters"
   to = "/.netlify/functions/server/api/characters"
+
+[[redirects]]
+  from = "/characters/schema/"
+  to = "/.netlify/functions/server/api/characters/schema" 
+
+[[redirects]]
+  from = '/characters/:id'
+  to = "/.netlify/functions/server/api/characters/:id"

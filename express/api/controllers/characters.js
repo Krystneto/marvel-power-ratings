@@ -1,13 +1,13 @@
 "use strict"
 const _ = require("lodash/core");
 
+const data = require('../../../mock-heroes.json');
 const charSchema = require('../../../schema/characters-schema.json')
 
 
 module.exports.getCharacters = (req, res) => {
     let { query } = req;
     let { name } = req.query;
-    let data = JSON.parse(process.env.MOCK_HEROES);
     let { characters } = data;
 
     if (name) {
@@ -23,7 +23,7 @@ module.exports.getCharacters = (req, res) => {
 
 module.exports.getCharacterById = (req, res) => {
     let { id } = req.params;
-    let { characters } = JSON.parse(process.env.MOCK_HEROES);
+    let { characters } = data;
     
     let char = _.filter(characters, el => el.id === id);
     res.send(char)

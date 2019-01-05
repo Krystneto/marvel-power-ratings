@@ -3,13 +3,13 @@ const _ = require("lodash/core");
 
 require('dotenv').config()
 const charSchema = require('../../../schema/characters-schema.json')
-
+const data = process.env.CHARACTERS || require('../../../characters.json')
 
 module.exports.getCharacters = (req, res) => {
 
     let { query } = req;
     let { name } = req.query;
-    let data = JSON.parse(process.env.HEROES);
+    data = JSON.parse(process.env.CHARACTERS);
     let { characters } = data;
 
     if (name) {

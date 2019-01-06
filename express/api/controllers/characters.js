@@ -1,10 +1,9 @@
 "use strict"
-require('dotenv').config();
 const _ = require("lodash/core");
 
 
 module.exports.getCharacters = (req, res) => {
-    const data = JSON.parse(process.env.CHARACTERS) || require('../../../characters.json')
+    const data = JSON.parse(process.env.CHARACTERS) //|| require('../../../characters.json')
     // console.log(process.env)
     // console.log(JSON.parse(process.env.CHARACTERS))
     // const data = process.env.CHARACTERS //|| require('../../../characters.json')
@@ -25,7 +24,7 @@ module.exports.getCharacters = (req, res) => {
 }
 
 module.exports.getCharacterById = (req, res) => {
-    const data = JSON.parse(process.env.CHARACTERS) || require('../../../characters.json')
+    const data = JSON.parse(process.env.CHARACTERS) //|| require('../../../characters.json')
     let { id } = req.params;
     let { characters } = data;
     

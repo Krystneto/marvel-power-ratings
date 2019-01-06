@@ -1,17 +1,14 @@
 "use strict"
 const _ = require("lodash/core");
 
+const data = require('../../../characters.json')
+const charSchema = require('../../../schema/characters-schema.json')
+
 
 module.exports.getCharacters = (req, res) => {
-    // const data = JSON.parse(process.env.CHARACTERS) //|| require('../../../characters.json')
-    const data = JSON.parse(process.env.CHARACTERS)
-    console.log(data)
-    // console.log(JSON.parse(process.env.CHARACTERS))
-    // const data = process.env.CHARACTERS //|| require('../../../characters.json')
     let { query } = req;
     let { name } = req.query;
     let { characters } = data;
-    // console.log(characters)
 
     if (name) {
         let character = _.filter(characters, el => el.name.toLowerCase() === name.toLowerCase());
@@ -25,7 +22,6 @@ module.exports.getCharacters = (req, res) => {
 }
 
 module.exports.getCharacterById = (req, res) => {
-    const data = JSON.parse(process.env.CHARACTERS) //|| require('../../../characters.json')
     let { id } = req.params;
     let { characters } = data;
     
@@ -34,6 +30,5 @@ module.exports.getCharacterById = (req, res) => {
 }
 
 module.exports.getCharactersSchema = (req, res) => {
-    const charSchema = require('../../../schema/characters-schema.json')
     res.json(charSchema)
 }

@@ -3,8 +3,9 @@ const _ = require("lodash/core");
 
 
 module.exports.getCharacters = (req, res) => {
-    const data = JSON.parse(process.env.CHARACTERS) //|| require('../../../characters.json')
-    // console.log(process.env)
+    // const data = JSON.parse(process.env.CHARACTERS) //|| require('../../../characters.json')
+    const data = JSON.parse(process.env.CHARACTERS)
+    console.log(data)
     // console.log(JSON.parse(process.env.CHARACTERS))
     // const data = process.env.CHARACTERS //|| require('../../../characters.json')
     let { query } = req;

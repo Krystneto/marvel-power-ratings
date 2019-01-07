@@ -26,6 +26,5 @@ To try out the service:
 
 try 
 
-```sh 
-curl https://optimistic-minsky-0509df.netlify.com/.netlify/functions/server/api/characters```
+```sh curl https://optimistic-minsky-0509df.netlify.com/.netlify/functions/server/api/characters```
 
